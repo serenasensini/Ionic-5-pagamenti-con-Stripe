@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title>
+      Stripe
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-row>
+        <ion-col>
+          Totale
+        </ion-col>
+        <ion-col>
+          {{moneta}}{{totale}}
+        </ion-col>
+      </ion-row>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="full" color="success" (click)="pagaConStripe()">Paga con Stripe</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
