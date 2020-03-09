@@ -10,10 +10,6 @@ const routes: Routes = [
   {
     path: 'stripe',
     loadChildren: './stripe/stripe.module#StripePageModule'
-  },
-  {
-    path: 'stripe-web',
-    loadChildren: './stripe-web/stripe.module#StripePageModule'
   }
 ];
 
